@@ -5,13 +5,9 @@ import cors from "cors"
 function createApp() {
   const app = express();
 
-  const corsOptions = {
-    methods: ["GET", "POST", "DELETE", "PATCH",]
-  }
-
+  app.use(cors())
   app.use(json());
-  app.use("/api", router);
-  app.use(cors(corsOptions))
+  app.use("/api", router)
   return app
 }
 

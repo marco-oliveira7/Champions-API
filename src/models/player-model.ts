@@ -4,6 +4,7 @@ export interface PlayerModel {
   club: string;
   nation: string;
   position: string;
+  img: string;
   statistics: {
     overall: number;
     pace: number;
